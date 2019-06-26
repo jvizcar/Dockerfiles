@@ -1,7 +1,7 @@
 ### tag: latest
 *26 June 2019*
 
-This version is built from Pytorch Docker version with 0.4.1 PyTorch version and cuda 9.0. This is an older version as of day of creation but works with Ubuntu 18.04 and tested on two GPU models: Titan V and GTX 2070.
+This version is built from Pytorch Docker version with 1.1.0 PyTorch version and cuda 10.0. This is the newest version available from Pytorch Docker that is not nightly or devel. Tested on Ubuntu 18.04 and a GTX 2070 GPU (and NVIDIA driver: 410.104). 
 
 Also contains jupyter notebook and pyvips for working with virtual images (i.e. .svs, .ndpi, etc).
 

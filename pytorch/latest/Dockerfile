@@ -1,5 +1,5 @@
 # From an official PyTorch image
-FROM pytorch/pytorch:0.4.1-cuda9-cudnn7-runtime
+FROM pytorch/pytorch:1.1.0-cuda10.0-cudnn7.5-runtime
 
 # Install additional Python packages..
 RUN conda install -y jupyter=1.0.0 \
