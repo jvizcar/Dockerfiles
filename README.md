@@ -1,2 +1,2 @@
 # Dockerfiles
-several dockerfiles used in creation with jvizcarra Docker hub account
+several dockerfiles used in creation with jvizcar Docker hub account
