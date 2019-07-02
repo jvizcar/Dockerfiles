@@ -1,16 +1,22 @@
 # From an official PyTorch image
 FROM pytorch/pytorch:0.4.1-cuda9-cudnn7-runtime
 
-# Install additional Python packages..
-RUN conda install -y jupyter=1.0.0 \
-					 matplotlib=2.2.2 \
-					 tqdm=4.23.4 \
-					 pandas=0.23.0
+# update packages
+RUN apt-get update
 
-# install pyvips
-RUN apt-get update && apt-get install libvips -y
+# install libvips
+RUN apt-get install libvips -y
+
+# install Python packages
+# RUN apt-get update
+# RUN pip install pyvips==2.1.2
+RUN conda install -y jupyter=1.0.0 matplotlib=2.2.2
+RUN conda install -y tqdm=4.23.4
+RUN conda install -y pandas=0.23.0
+RUN conda install -y scikit-learn=0.19.1
 RUN pip install pyvips==2.1.2
 
+################ ---------------- Set up for starting notebook --------------------------#############
 # Create a user
 RUN useradd -ms /bin/bash docker
 
