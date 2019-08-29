@@ -14,7 +14,9 @@ RUN conda install -y jupyter=1.0.0 matplotlib=2.2.2
 RUN conda install -y tqdm=4.23.4
 RUN conda install -y pandas=0.23.0
 RUN conda install -y scikit-learn=0.19.1
+RUN conda install -y scikit-image=0.13.1
 RUN pip install pyvips==2.1.2
+RUN pip install opencv-python
 
 ################ ---------------- Set up for starting notebook --------------------------#############
 # Create a user
